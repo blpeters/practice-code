@@ -70,6 +70,10 @@ titles[0].textContent = 'Submit summin';
 
 
 
+
+
+
+
 //BRAD'S NOTES ARE BELOW:
 
 // EXAMINE THE DOCUMENT OBJECT //
