@@ -27,6 +27,8 @@
       { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
     ];
 
+
+
     const people = [
       'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Beckett, Samuel', 'Blake, William', 'Berger, Ric', 'Beddoes, Mick', 'Beethoven, Ludwig',
       'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving',
@@ -37,28 +39,80 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-
+    console.table(inventors.filter((inventor) => {
+      return (inventor.year >= 1500 && inventor.year < 1600);
+    }));
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
 
+    const names = inventors.map((inventor) => {
+      return(`${inventor.first} ${inventor.last}`);
+    });
+    console.table(names);
+
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    const birth = inventors.sort((current, next) => current.year > next.year ? 1 : -1);
+    console.table(birth);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    const totalYears = inventors.reduce((total, inventorNext) => {
+      return total + (inventorNext.passed - inventorNext.year);  
+    }, 0);
+    console.log(totalYears);
 
     // 5. Sort the inventors by years lived
-
+    const oldest2Youngest = inventors.sort((last, next) => 
+      (last.passed - last.year) > (next.passed - next.year) ? -1 : 1 );
+      console.table(oldest2Youngest);
+    
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+    // const category = document.querySelector(".mw-category");
+    // const links = category.querySelectorAll('a');
+
+    // //convert node list to an array so we can run map and filter.
+    // //Map for the text of each street and then filter if streets contain "de".
+    // linksArr = Array.from(links);
+    // linksText = linksArr.map((link) => {
+    //   return link.title;
+    // });
+    // console.log(linksText);
+
+    // const streetsWithDe = linksText.filter((link) {
+    //   return link.includes("de");
+    // });
+    // console.log(streetsWithDe);
+
+   
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const byLastName = people.sort(function(lastOne, nextOne) {
+      let [aLast, aFirst] = lastOne.split(', ');
+      let [bLast, bFirst] = nextOne.split(', ');
+      return (lastOne > nextOne ? 1 : -1);   
+   
+    });
+
+    console.table(byLastName);
+      
+
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    
+    const travel = data.reduce((obj, method) => {
+      if (!obj[method]) {
+        obj[method] = 0;  
+      };
+      obj[method]++;
+      return obj;
+    }, {});
+    console.log(travel);
 
   </script>
 </body>
