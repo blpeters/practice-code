@@ -1,0 +1,12 @@
+:root {  /*This is to define CSS variables at the absolute root of the document*/
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
