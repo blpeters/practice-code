@@ -27,7 +27,10 @@
 }
 
 .container {
-    padding: 30px;
+    box-sizing: border-box;
+    width: 75%;
+    margin: auto;
+    
     
 }
 
@@ -48,18 +51,33 @@ html {
     
 }
 
-.options {
+p {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
 
-    background-color: hsl(225, 100%, 94%);
+.options {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    background-color:hsl(225, 100%, 98%)
+    
 }
 
 .music {
-    float: left;
+    float: inline-start;
     padding: 15px;
 }
 
+section {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
 .summary p {
     font-size: 16px;
+    
 }
 
 .plan {
@@ -72,4 +90,11 @@ html {
 
 footer {
     position: fixed;
+}
+
+.selection {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
 }
