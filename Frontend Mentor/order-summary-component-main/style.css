@@ -1,5 +1,10 @@
-:root {  /*This is to define CSS variables at the absolute root of the document*/
 
+:root {  /*This is to define CSS variables at the absolute root of the document*/
+    font-family: 'Red Hat Display', sans-serif 
+}
+
+.annual {
+    font-size: 16px;
 }
 
 .attribution { 
@@ -9,4 +14,62 @@
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 15px 10px -10px black; 
+    border-radius: 10px;
+    
+}
+
+.container {
+    padding: 30px;
+    
+}
+
+.hero {
+    float: top;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+html {
+    min-height: 100;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: hsl(225, 100%, 94%);
+
+    
+}
+
+.options {
+
+    background-color: hsl(225, 100%, 94%);
+}
+
+.music {
+    float: left;
+    padding: 15px;
+}
+
+.summary p {
+    font-size: 16px;
+}
+
+.plan {
+    float: left;
+}
+
+#change {
+    float: right;
+}
+
+footer {
+    position: fixed;
 }
