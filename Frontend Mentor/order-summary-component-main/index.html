@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
   </head> 
+
   <body>
   <div class="card">
     <img class="hero" src="images/illustration-hero.svg">   
@@ -23,22 +24,19 @@
         device anywhere you like!</p>
       </section>
       <div class="options">
-        <img class="music" src="images/icon-music.svg">
-        <div class="plan">
-          <p class="annual">Annual Plan</p>
-          <p class="annual">$59.99/year</p>
-          <a href="#" id="change">Change</a>
-        </div>
+        <img id="music" src="images/icon-music.svg">
+        <p class="plan" id="choice"><span>Annual Plan</span>$59.99/year</p>
+        <a href="#" id="change">Change</a>
       </div>
       <div class="selection">
         <input type="button" value="Proceed to Payment"><br>
-        <input type="button" value="Cancel Order">
+        <input type="button" id="cancel" value="Cancel Order">
       </div>
     </div>  
   </div>
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://blpeters.github.io/">Brett Peters</a>.
     </footer>
 </body>
 </html>
