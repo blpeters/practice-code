@@ -134,3 +134,8 @@ h2 {
 .summary p {
     color: gray;
 }
+
+.btn:hover,
+#change:hover {
+    cursor: pointer;
+}
