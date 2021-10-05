@@ -1,5 +1,5 @@
 
-:root {  /*This is to define CSS variables at the absolute root of the document*/
+:root {  
     font-family: 'Red Hat Display', sans-serif 
 }
 
@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .attribution { 
     font-size: 11px; 
@@ -19,7 +25,6 @@
 
 .card {
     width: 300px;
-    height: 500px;
     margin: auto;
     background-color: white;
     box-shadow: 0px 15px 10px -10px hsl(223, 47%, 23%); 
@@ -27,14 +32,10 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: baseline;
-    
-
 }
 
-
 .container {
-    padding: 10% 10%;
+    padding: 20px 10%;
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ html {
     background-image: url(images/pattern-background-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top/100%;
     background-color: hsl(225, 100%, 94%);
     text-align: center;
 }
@@ -75,10 +76,20 @@ html {
 .plan {
     display: inline-block;
     padding-right: 10%; 
+    color: gray;
+}
+
+.plan span {
+    color: black;
 }
 
 #change {
     display: inline-block;
+}
+
+#payment {
+    box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+    margin-bottom: 10px;
 }
 
 footer {
@@ -110,7 +121,6 @@ input[type="button"] {
     text-decoration: none;
     display: inline-block;
     font-family: inherit;
-    
 }
 
 .options p span {
@@ -119,4 +129,8 @@ input[type="button"] {
 
 h2 {
     font-size: 18px;
+}
+
+.summary p {
+    color: gray;
 }
