@@ -6,7 +6,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -21,11 +20,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 Users should be able to:
 
 - See hover states for interactive elements
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -45,8 +39,8 @@ This was my first attempt at my own html/CSS layout. To improve my baseline unde
 
 ### Continued development
 
-For the next project, I would like to focus more on approaching the CSS styling in a more systematic way with better notes.
-
+- Cleaner CSS styling
+- Additional styling with hover states.
 
 ### Useful resources
 
