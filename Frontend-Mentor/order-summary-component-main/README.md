@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/blpeters/practice-code/tree/main/Frontend-Mentor/order-summary-component-main](https://your-solution-url.com)
-- Live Site URL: [https://blpeters.github.io/practice-code/Frontend-Mentor/order-summary-component-main/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/blpeters/practice-code/tree/main/Frontend-Mentor/order-summary-component-main](https://github.com/blpeters/practice-code/tree/main/Frontend-Mentor/order-summary-component-main)
+- Live Site URL: [https://blpeters.github.io/practice-code/Frontend-Mentor/order-summary-component-main/](https://blpeters.github.io/practice-code/Frontend-Mentor/order-summary-component-main/)
 
 ## My process
 
