@@ -1,6 +1,62 @@
+/* 
+=====================================
+    GENERAL CSS STYLING NOTES:
+    - Try mobile-first design on this project.
+    - Use CSS variables
+    - Add all necessary media queries
+    - Add hover functionality
+    - Keep in mind the "cascade"
+=====================================
+*/
+
+:root {
+
+    /* Viewports variables */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;   
+    
+    /* Primary Color Variables */
+    --main-color: hsl(233, 47%, 7%);
+    --card-color: hsl(244, 38%, 16%);
+    --accent-color: hsl(277, 64%, 61%);
+
+    /* Neutral Color Variables */
+    --white-color: hsl(0, 0%, 100%);
+    --paragraph-white-color: hsla(0, 0%, 100%, 0.75);
+    --heading-white-color: hsla(0, 0%, 100%, 0.6);
+
+    /* Typography */
+    --body-text: 15px;
+
+}
+
+html {
+    background-color: var(--main-color);
+    display: flex;
+}
 
 body {
-    color: red;
+    position: relative;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 15% 5%;
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    /* TODO- fix below line to add colorized effect to hero image. not currently working */
+    background-color: var(--card-color);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* 
@@ -8,6 +64,13 @@ body {
     Footer
 =====================================
 */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+}
 
 .attribution { 
     font-size: 11px;
