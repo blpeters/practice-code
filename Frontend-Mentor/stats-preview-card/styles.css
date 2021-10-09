@@ -27,6 +27,8 @@
 
     /* Typography */
     --body-text: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
 
 }
 
@@ -45,6 +47,7 @@ body {
     background-color: var(--card-color);
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
 }
 
 .hero {
@@ -59,6 +62,30 @@ body {
     align-items: center;
 }
 
+h2, h3, p {
+    margin: .5rem;
+    color: var(--paragraph-white-color);
+}
+
+.stat {
+    text-transform: uppercase;
+}
+
+h2,
+.stat-main {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--white-color);
+    text-transform: initial;
+}
+.stats {
+    padding: 5% 0;
+}
+
+.keyword {
+    color: var(--accent-color);
+}
+
 /* 
 =====================================
     Footer
@@ -66,10 +93,11 @@ body {
 */
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 1rem;
+    text-align: center;
 }
 
 .attribution { 
@@ -79,3 +107,4 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
