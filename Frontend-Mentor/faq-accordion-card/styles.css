@@ -139,7 +139,7 @@ details {
     max-width: 100%;
     font-weight: 400;
 }
-
+/* remove default <details> marker and add custom arrow image. */
 details > summary {
     list-style: none;
 }
@@ -153,9 +153,16 @@ details > summary::after {
     float: right;
 }
 
+/* On click open, make question bold and rotate details arrow */
+
 details[open] .question {
     font-weight: 700;
 }
+
+details[open] .question::after {
+    transform: rotate(.5turn);
+}
+
 .answer {
     line-height: 1.5rem;
     padding-bottom: 1rem;
@@ -191,6 +198,9 @@ summary.question:hover {
     cursor: pointer;
 }
 
+.attribution a:hover {
+    color:var(--light-gray-blue);
+}
 
 /* 
 =========================
@@ -201,9 +211,16 @@ summary.question:hover {
     font-size: 11px;
     text-align: center; 
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--very-dark-gray-blue); 
+    text-decoration: none
 }
+
+/* 
+=========================
+    MEDIA QUERIES
+=========================
+*/
