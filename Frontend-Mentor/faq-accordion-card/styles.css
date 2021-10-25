@@ -139,6 +139,7 @@ details {
     max-width: 100%;
     font-weight: 400;
 }
+
 /* remove default <details> marker and add custom arrow image. */
 details > summary {
     list-style: none;
@@ -153,16 +154,6 @@ details > summary::after {
     float: right;
 }
 
-/* On click open, make question bold and rotate details arrow */
-
-details[open] .question {
-    font-weight: 700;
-}
-
-details[open] .question::after {
-    transform: rotate(.5turn);
-}
-
 .answer {
     line-height: 1.5rem;
     padding-bottom: 1rem;
@@ -173,6 +164,7 @@ details[open] .question::after {
     grid-column-start: 1;
     grid-row-start: 1;
 }
+
 .mobile-main {
     bottom: 54%;
     position: relative;
@@ -202,6 +194,16 @@ summary.question:hover {
     color:var(--light-gray-blue);
 }
 
+/* On click open, make question bold and rotate details arrow */
+
+details[open] .question {
+    font-weight: 700;
+}
+
+details[open] .question::after {
+    transform: rotate(.5turn);
+}
+
 /* 
 =========================
     FOOTER
@@ -224,3 +226,52 @@ summary.question:hover {
     MEDIA QUERIES
 =========================
 */
+
+@media screen and (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
+
+    .img-container {
+        display: grid;
+    }
+
+    .desktop {
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        position: relative;
+        max-height: 100%;
+    }
+
+    .desktop-main {
+        display: grid;
+        bottom: 15%;
+        right: 10%;
+        overflow: hidden;
+        z-index: 1;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .desktop-floor {
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        bottom: 55%;
+        right: 65%;
+    }
+
+    .desktop-box {
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+    }
+
+    .card {
+        flex-direction: row;
+        min-width: 500px;
+        min-height: 60%;
+        max-width: 80vw;
+    }
+}
