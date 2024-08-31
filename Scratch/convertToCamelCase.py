@@ -1,9 +1,6 @@
-def digitize(n):
-    arr = []
-    for char in str(n):
-        num = int(char)
-        arr += num
-    return arr[::-1]
+import re
 
-print(digitize(12345))
-print(digitize(235231))
+s = "anvionelaman"
+numerator = len(re.findall("[a-m]", s))
+denominator = len(s)
+print(f"{numerator}/{denominator}")
