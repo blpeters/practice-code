@@ -91,3 +91,28 @@ print(person.last)
 for key in person_info.keys():
     print(getattr(person, key))
 
+# 8 Dealing with secret information. Hiding input text - getpass module in python:
+from getpass import getpass
+username = input('Username: ')
+password = getpass('Password: ')    # getpass will conceal keyboard inputs.
+
+print(username)
+print(password)
+
+# 9 Running python code from the terminal with the -m notation.
+# python -m venv ....
+# python -m smtpd -c DebuggingServer -n localhost:1025  (This smtpd module takes arguments -c and -n)
+# You can import the module to review the arguments a module can take.
+# python
+# import <module name>
+# help(<module name>)
+# ^ know how to look stuff up
+
+# Alternatively use the dir() function on an object to see the methods available.
+
+from datetime import datetime
+dir(datetime)
+# The -m will automatically look elsewhere for specified modules named after -m. Look up corey's videos on this
+
+
+
